@@ -1,0 +1,15 @@
+
+<!--
+html, body, #tbl_wrap { height: 100%; width: 100%; padding: 0; margin: 0; }
+#td_wrap { vertical-align: middle; text-align: center; }
+-->
+body {background-color: black;}
+.title{
+font-size: 750%;
+text-shadow:0 0 0.05em white 
+}
+.subheading{
+    font-size: 300%;
+    text-shadow:0 0 0.1em white 
+}
+      
