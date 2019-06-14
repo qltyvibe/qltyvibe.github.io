@@ -8,18 +8,29 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script>
+      function myLoader() {
+        myVar = setTimeout(showPage, 3000);
+      }
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("afterLoad").style.display ="block";
+      }
+    </script>
     
   </head>
 
-  <body> 
+  <body onload = "myLoader()"> 
+    
       <table id="tbl_wrap"><tbody><tr><td id="td_wrap">
       <!-- START: Anything between these wrapper comment lines will be centered -->
-
-
-      <div class="title" style="color: white; display: inline-block;">*QLTY VIBE</div>
-      <div class="subheading" style="color: white;">coming soon</div>
-
+      <div id="loader">IS THIS WORKING?</div>
+      <div id="afterLoad">
+        <div class="title" style="color: white; display: inline-block;">HI VIET</div>
+        <div class="subheading" style="color: white;">coming soon</div>
+      </div>
       <!-- END: Anything between these wrapper comment lines will be centered -->
       </td></tr></tbody></table>
+
   </body>
 </html>
