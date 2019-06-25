@@ -6,31 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script>
-      function myLoader() {
-        myVar = setTimeout(showPage, 3000);
-      }
-      function showPage() {
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("afterLoad").style.display ="block";
-      }
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
     
   </head>
 
-  <body onload = "myLoader()"> 
+  
+
+  <body> 
+    
     
       <table id="tbl_wrap"><tbody><tr><td id="td_wrap">
       <!-- START: Anything between these wrapper comment lines will be centered -->
-      <div id="loader">IS THIS WORKING?</div>
+      
       <div id="afterLoad">
-        <div class="title" style="color: white; display: inline-block;">*QLTY VIBE</div>
-        <div class="subheading" style="color: white;">coming soon</div>
+        <div class="title" style="color: white; display: inline-block;">Qlty Vibe®</div>        
       </div>
       <!-- END: Anything between these wrapper comment lines will be centered -->
       </td></tr></tbody></table>
 
+      <script>
+        $('body').append('<div style="" id="loadingDiv"><div class="loader">100%</div></div>');
+        $(window).on('load', function(){
+          loader();
+          setTimeout(removeLoader, 2500); //wait for page load PLUS two.5 seconds.
+        });
+        function loader(_success) {
+          var obj = document.querySelector('#loadingDiv'),
+          inner = document.querySelector('.loader'),
+          page = document.querySelector('.afterLoad');
+          var w = 0,
+              t = setInterval(function() {
+                  w = w + 1;
+                  inner.textContent = w +'%';
+                  if (w === 100){
+                      clearInterval(t);
+                      w = 0;
+                      if (_success){
+                          return _success();
+                      }
+                  }
+              }, 20);
+          }
+        function removeLoader(){
+            $( "#loadingDiv" ).fadeOut(500, function() {
+              // fadeOut complete. Remove the loading div
+              $( "#loadingDiv" ).remove(); //makes page more lightweight 
+          });  
+        }
+      </script>
   </body>
+  
 </html>
