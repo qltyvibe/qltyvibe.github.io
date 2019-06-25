@@ -7,8 +7,8 @@ html, body, #tbl_wrap { height: 100%; width: 100%; padding: 0; margin: 0; }
 
 @font-face {
     font-family: 'prospectusstd_regregular';
-    src: url('https://qltyvibe.github.io/css/fonts/prospectusstdreg-webfont.woff2') format('woff2'),
-         url('https://qltyvibe.github.io/css/fonts/rospectusstdreg-webfont.woff') format('woff');
+    src: url('./css/fonts/prospectusstdreg-webfont.woff2') format('woff2'),
+         url('./css/fonts/rospectusstdreg-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -16,8 +16,8 @@ html, body, #tbl_wrap { height: 100%; width: 100%; padding: 0; margin: 0; }
 
 @font-face {
     font-family: 'prospectus_stdbold';
-    src: url('https://qltyvibe.github.io/css/fonts/prospectusstdbld-webfont.woff2') format('woff2'),
-         url('https://qltyvibe.github.io/css/fonts/prospectusstdbld-webfont.woff') format('woff');
+    src: url('./css/fonts//prospectusstdbld-webfont.woff2') format('woff2'),
+         url('./css/fonts/prospectusstdbld-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -25,16 +25,16 @@ html, body, #tbl_wrap { height: 100%; width: 100%; padding: 0; margin: 0; }
 
 @font-face {
     font-family: 'prospectus_stdblack';
-    src: url('https://qltyvibe.github.io/css/fonts/prospectusstdblk-webfont.woff2') format('woff2'),
-         url('https://qltyvibe.github.io/css/fonts/prospectusstdblk-webfont.woff') format('woff');
+    src: url('./css/fonts/prospectusstdblk-webfont.woff2') format('woff2'),
+         url('./css/fonts/prospectusstdblk-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'prospectus_std_msemibold';
-    src: url('https://qltyvibe.github.io/css/fonts/prospectusstdsbd-webfont.woff2') format('woff2'),
-         url('https://qltyvibe.github.io/css/fonts/prospectusstdsbd-webfont.woff') format('woff');
+    src: url('./css/fonts/prospectusstdsbd-webfont.woff2') format('woff2'),
+         url('./css/fonts/prospectusstdsbd-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
