@@ -1,8 +1,9 @@
 
 <!--
-html, body, #tbl_wrap { height: 100%; width: 100%; padding: 0; margin: 0; }
-#td_wrap { vertical-align: bottom; text-align: center; }
+html, body, #tbl_wrap, #loadingDiv { height: 100%; width: 100%; padding: 0; margin: 0; }
+#td_wrap{ vertical-align: bottom; text-align: center; }
 #td_wrap_inner { vertical-align: top; text-align: center; }
+.loader{ vertical-align: bottom; text-align: center; }
 -->
 
 @font-face {
@@ -25,8 +26,8 @@ html, body, #tbl_wrap { height: 100%; width: 100%; padding: 0; margin: 0; }
 
 @font-face {
     font-family: 'prospectus_stdblack';
-    src: url('https:qltyvibe.github.io/css/fonts/prospectusstdblk-webfont.woff2') format('woff2'),
-         url('https:qltyvibe.github.io/css/fonts/prospectusstdblk-webfont.woff') format('woff');
+    src: url('css/fonts/prospectusstdblk-webfont.woff2') format('woff2'),
+         url('css/fonts/prospectusstdblk-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -44,12 +45,8 @@ body {background-color: rgb(12, 12, 12);}
 .title{
     font-family: prospectus_stdblack, Helvetica, sans-serif;
     font-size: 2250%;
-    text-shadow:0 0 0.00em white 
 }
-.subheading{
-    font-size: 300%;
-    text-shadow:0 0 0.075em white 
-}
+
       
 .loader {
     font-family: prospectus_stdblack, Helvetica, sans-serif;
