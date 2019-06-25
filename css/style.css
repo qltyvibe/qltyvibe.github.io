@@ -26,8 +26,8 @@ html, body, #tbl_wrap, #loadingDiv { height: 100%; width: 100%; padding: 0; marg
 
 @font-face {
     font-family: 'prospectus_stdblack';
-    src: url('./css/fonts/prospectusstdblk-webfont.woff2') format('woff2'),
-         url('./css/fonts/prospectusstdblk-webfont.woff') format('woff');
+    src: url('./fonts/prospectusstdblk-webfont.woff2') format('woff2'),
+         url('./fonts/prospectusstdblk-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
