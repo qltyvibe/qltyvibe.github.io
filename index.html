@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:300&display=swap" rel="stylesheet">
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
-    
+ 
   </head>
 
   
@@ -102,6 +105,54 @@
                       <div class="fx in-pink in-pink-f opa" id="eventyear" style="transform: translate3d(0px, 0%, 0px);">2019-2020</div>
                     </div>
                   </div>
+                 
+                  <div class="container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="750"> 
+                      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                          <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+                    
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                          <div class="item active" onclick="openModal()">
+                            
+                              <span>Art</span>
+                              <span>Night</span>
+                              <div class="inneritem active">
+                                July 1?
+                              </div>
+                          </div>
+                    
+                          <div class="item">
+                              <span>Nature</span>
+                              <span>Night</span>
+                              <div class="inneritem active">
+                                July 2?
+                              </div>
+                          </div>
+                        
+                          <div class="item">
+                              <span>Dance</span>
+                              <span>Party</span>
+                              <div class="inneritem active">
+                                TBD
+                              </div>
+                          </div>
+                          <div class="item">
+                              <span>Another One</span>
+                              
+                              <div class="inneritem active">
+                                TBD
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                 
           </section>
           <footer id="f" style="transform: translate3d(0px, 0px, 0px);">
             <div id="f-social">
@@ -163,6 +214,12 @@
       <script>
         AOS.init();
       </script>
+      
+
+      
+      
+
+      
 <!--       
       <div id="afterLoad">
         <div class="title" style="color: white; display: inline-block;">Qlty Vibe®</div>        

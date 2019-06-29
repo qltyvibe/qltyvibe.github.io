@@ -176,8 +176,11 @@ li {
     font-family: WLC;
     
 }
-#s0 .s-txt, #s2 .s-txt, #s1 .s-txt {
+#s0 .s-txt, #s2 .s-txt {
     left: 12.6875vw;
+}
+#s1 .s-txt{
+    left:32vw;
 }
 #s0 .s-txt, #s1 .s-txt, #s2 .s-txt {
     top: 23.5625vw;
@@ -223,7 +226,7 @@ p {
     padding-top: 12vw;
 }
 #s1 .s-txt {
-    right: 12.125vw;
+    right: 5.75vw;
 }
 .s-txt h2 {
     font-size: 15vw;
@@ -277,6 +280,17 @@ p {
     -webkit-transform: translate3d(0,102%,0);
     transform: translate3d(0,102%,0);
 }
+.item{
+    font-size: 6vw;
+
+    color:white;
+}
+
+.inneritem{
+    font-size: 1.75vw;
+    font-family: 'Muli', sans-serif;
+}
+
 
 #aom{
     font-family: 'Muli', sans-serif;
@@ -372,6 +386,16 @@ p {
     -webkit-transform: translate3d(0,102%,0);
     transform: translate3d(0,102%,0);
 }
+.container{
+    margin-left: 5vw;
+    width: 30vw;
+    padding-top: 40vw;
+}
+
+.carousel, .slide{
+    height: 25vw;
+}
+
 .loader {
     font-family: WLC, Helvetica, sans-serif;
     padding: 0; margin: 0;
