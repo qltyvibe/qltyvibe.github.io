@@ -53,7 +53,15 @@ html {
     -webkit-text-size-adjust: none;
     -webkit-font-smoothing: subpixel-antialiased;
     -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
 }
+
+a:hover{
+    color:rgb(206, 206, 206);
+}
+a:link {
+    text-decoration: none;
+  }
 a, body, div, footer, h1, h2, h3, header, html, img, li, nav, p, span, ul {
     margin: 0;
     padding: 0;
@@ -63,6 +71,14 @@ a, body, div, footer, h1, h2, h3, header, html, img, li, nav, p, span, ul {
     font-size: 100%;
 }
 
+a{
+    -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
 
 h1 {
     display: block;
@@ -79,7 +95,7 @@ header {
 #h-h1-w {
     width: 100%;
     position: absolute;
-    top: 21.125vw;
+    top: 19.125vw;
     left: 5vw;
     padding: 0 0 0 0;
 }
@@ -115,6 +131,7 @@ li {
 }
 #h-nav-w ul {
     height: 100%;
+    font-family: 'Muli', sans-serif;
 }
 
 #h-nav-w li:first-child {
@@ -147,7 +164,7 @@ li {
 }
 .s-w {
     padding: 7.5vw 0;
-    height: 55.25vw;
+    height: 74.25vw;
     
 }
 .s {
@@ -163,7 +180,7 @@ li {
     left: 12.6875vw;
 }
 #s0 .s-txt, #s1 .s-txt, #s2 .s-txt {
-    top: 18.5625vw;
+    top: 23.5625vw;
 }
 .s-txt {
     position: absolute;
@@ -175,7 +192,8 @@ li {
 }
 #txt{
     font-family: WLC;
-    margin: 0 0 21vw 0;
+    margin: 10vw 0 21vw 0;
+    padding-top: 7vw;
 }
 p {
     display: block;
@@ -198,7 +216,12 @@ p {
     padding: inherit;
     
 }
-
+#s0-txt{
+    padding-top: 11vw;
+}
+#s1-txt{
+    padding-top: 12vw;
+}
 #s1 .s-txt {
     right: 12.125vw;
 }
@@ -255,18 +278,25 @@ p {
     transform: translate3d(0,102%,0);
 }
 
+#aom{
+    font-family: 'Muli', sans-serif;
+}
+#eventyear{
+    font-family: 'Muli', sans-serif;
+}
 #txt-signature {
     position: relative;
     padding: 0 0 0 21vw;
     margin: 0 0 0;
-    font-size: 2.5vw;
+    font-size: 2vw;
     line-height: 3.75vw;
+    font-family: 'Muli', sans-serif;
 }
 #txt-signature .fx {
     width: 100%;
 }
 #f {
-    padding: 17.5625vw 0 12.75vw;
+    padding: 40.5625vw 0 12.75vw;
 }
 #f {
     position: relative;
@@ -321,7 +351,7 @@ p {
     transition: all 1s cubic-bezier(.215,.61,.355,1);
 }
 #f-bottom-w {
-    top: 30.3125vw;
+    top: 51.3125vw;
     left: 4.5vw;
 }
 #f-bottom-w {
